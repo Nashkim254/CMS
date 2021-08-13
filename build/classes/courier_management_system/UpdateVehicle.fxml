@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane id="AnchorPane" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="courier_management_system.UpdateVehicleController">
+   <children>
+      <TextField fx:id="Type" layoutX="260.0" layoutY="77.0" prefHeight="31.0" prefWidth="228.0" />
+      <TextField fx:id="licenseNo" layoutX="260.0" layoutY="169.0" prefHeight="31.0" prefWidth="228.0" />
+      <TextField fx:id="NewlicenseNo" layoutX="260.0" layoutY="263.0" prefHeight="31.0" prefWidth="228.0" />
+      <Text layoutX="137.0" layoutY="98.0" strokeType="OUTSIDE" strokeWidth="0.0" text="VehicleType" />
+      <Text layoutX="137.0" layoutY="190.0" strokeType="OUTSIDE" strokeWidth="0.0" text="License No" />
+      <Text layoutX="137.0" layoutY="285.0" strokeType="OUTSIDE" strokeWidth="0.0" text="New License No" />
+      <Button fx:id="update" layoutX="268.0" layoutY="333.0" mnemonicParsing="false" onAction="#vehicleUpdate" text="Update" />
+      <Button layoutY="14.0" mnemonicParsing="false" onAction="#back_button" prefHeight="50.0" prefWidth="50.0" AnchorPane.leftAnchor="10.0" AnchorPane.topAnchor="10.0">
+         <graphic>
+            <ImageView fitHeight="20.0" fitWidth="20.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../images/arrow-go-back-line.png" />
+               </image>
+            </ImageView>
+         </graphic>
+      </Button>
+   </children>
+</AnchorPane>

@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane id="AnchorPane" prefHeight="600.0" prefWidth="900.0" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="courier_management_system.ShowPendingOrdersController">
+   <children>
+      <Label layoutX="262.0" layoutY="40.0" prefHeight="64.0" prefWidth="379.0" text="Your Pending Orders">
+         <font>
+            <Font size="40.0" />
+         </font>
+      </Label>
+      <TableView fx:id="ShowPendingOrders" layoutX="13.0" layoutY="134.0" prefHeight="460.0" prefWidth="876.0">
+        <columns>
+          <TableColumn fx:id="showreceivername" prefWidth="125.0" text="Receiver Name" />
+          <TableColumn fx:id="showreceiveraddress" prefWidth="156.0" text="Receiver Address" />
+            <TableColumn fx:id="showreceiverphone" minWidth="0.0" prefWidth="135.0" text="Receiver Phone" />
+            <TableColumn fx:id="showpackagetype" minWidth="0.0" prefWidth="111.0" text="Package Type" />
+            <TableColumn fx:id="showvehicletype" minWidth="0.0" prefWidth="98.0" text="Vehicle Type" />
+            <TableColumn fx:id="showvehiclelicense" minWidth="0.0" prefWidth="147.0" text="Vehicle License" />
+            <TableColumn fx:id="showorderdate" minWidth="0.0" prefWidth="103.0" text="Order Date" />
+        </columns>
+      </TableView>
+      <Button layoutX="21.0" layoutY="25.0" mnemonicParsing="false" onAction="#back_button" prefHeight="50.0" prefWidth="50.0" AnchorPane.leftAnchor="10.0" AnchorPane.topAnchor="10.0">
+         <graphic>
+            <ImageView fitHeight="20.0" fitWidth="20.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../images/arrow-go-back-line.png" />
+               </image>
+            </ImageView>
+         </graphic>
+      </Button>
+   </children>
+</AnchorPane>

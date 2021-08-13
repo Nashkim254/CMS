@@ -1,0 +1,160 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane id="AnchorPane" prefHeight="600.0" prefWidth="900.0" style="-fx-background-color: #000000;" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="courier_management_system.AdminPanelController">
+   <children>
+      <VBox prefHeight="600.0" prefWidth="180.0" style="-fx-background-color: #AA1BAC;">
+         <children>
+            <ImageView fitHeight="180.0" fitWidth="180.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../images/truck-line.png" />
+               </image>
+            </ImageView>
+            <Button fx:id="newOrderButton" alignment="BASELINE_LEFT" mnemonicParsing="false" onAction="#NewOrder" prefHeight="50.0" prefWidth="180.0" style="-fx-background-color: #AA1BAC;" text="New Order" textFill="#f8f8f8">
+               <font>
+                  <Font size="17.0" />
+               </font>
+               <graphic>
+                  <ImageView fitHeight="20.0" fitWidth="20.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../images/add-line.png" />
+                     </image>
+                  </ImageView>
+               </graphic>
+            </Button>
+            <Button fx:id="oderDetails" alignment="BASELINE_LEFT" mnemonicParsing="false" onAction="#orderDetails" prefHeight="50.0" prefWidth="180.0" style="-fx-background-color: #AA1BAC;" text="All Orders" textFill="WHITE">
+               <font>
+                  <Font size="17.0" />
+               </font>
+               <graphic>
+                  <ImageView fitHeight="20.0" fitWidth="20.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../images/folder-info-line.png" />
+                     </image>
+                  </ImageView>
+               </graphic>
+            </Button>
+            <Button fx:id="vehicleSection1" alignment="BASELINE_LEFT" mnemonicParsing="false" onAction="#openTrackOrder" prefHeight="50.0" prefWidth="180.0" style="-fx-background-color: #AA1BAC;" text="Track Order" textFill="WHITE">
+               <font>
+                  <Font size="17.0" />
+               </font>
+               <graphic>
+                  <ImageView fitHeight="20.0" fitWidth="20.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../images/map-pin-user-fill.png" />
+                     </image>
+                  </ImageView>
+               </graphic>
+            </Button>
+            <Button fx:id="vehicleSection2" alignment="BASELINE_LEFT" mnemonicParsing="false" onAction="#openCheckPerformance" prefHeight="50.0" prefWidth="180.0" style="-fx-background-color: #AA1BAC;" text="Performance" textFill="WHITE">
+               <font>
+                  <Font size="17.0" />
+               </font>
+               <graphic>
+                  <ImageView fitHeight="20.0" fitWidth="20.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../images/file-line.png" />
+                     </image>
+                  </ImageView>
+               </graphic>
+            </Button>
+            <Button fx:id="transaction" alignment="BASELINE_LEFT" mnemonicParsing="false" onAction="#transaction_action" prefHeight="50.0" prefWidth="180.0" style="-fx-background-color: #AA1BAC;" text="Transaction" textFill="WHITE">
+               <font>
+                  <Font size="17.0" />
+               </font>
+               <graphic>
+                  <ImageView fitHeight="20.0" fitWidth="20.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../images/money-dollar-circle-line.png" />
+                     </image>
+                  </ImageView>
+               </graphic>
+            </Button>
+            <Button fx:id="orderstatus" alignment="BASELINE_LEFT" mnemonicParsing="false" onAction="#viewOrderStatus" prefHeight="50.0" prefWidth="180.0" style="-fx-background-color: #AA1BAC;" text="Order Status" textFill="WHITE">
+               <font>
+                  <Font size="17.0" />
+               </font>
+               <graphic>
+                  <ImageView fitHeight="20.0" fitWidth="20.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../images/file-line.png" />
+                     </image>
+                  </ImageView>
+               </graphic>
+            </Button>
+            <Button alignment="BASELINE_LEFT" mnemonicParsing="false" onAction="#logout_button" prefHeight="50.0" prefWidth="180.0" style="-fx-background-color: #AA1BAC;" text="Logout" textFill="#f8f8f8">
+               <font>
+                  <Font size="17.0" />
+               </font>
+               <graphic>
+                  <ImageView fitHeight="20.0" fitWidth="20.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../images/logout-box-line.png" />
+                     </image>
+                  </ImageView>
+               </graphic>
+            </Button>
+         </children>
+      </VBox>
+      <Button fx:id="orderedpackage" alignment="CENTER" layoutX="502.0" layoutY="422.0" mnemonicParsing="false" onAction="#showPackages" prefHeight="200.0" prefWidth="250.0" style="-fx-background-color: #AA1BAC;" text="Show Package Details" textFill="#f8f8f8" AnchorPane.bottomAnchor="10.0" AnchorPane.rightAnchor="10.0">
+         <font>
+            <Font size="17.0" />
+         </font>
+         <graphic>
+            <ImageView fitHeight="20.0" fitWidth="20.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../images/gift-2-line.png" />
+               </image>
+            </ImageView>
+         </graphic>
+      </Button>
+      <Button fx:id="paymentsmade" alignment="CENTER" layoutX="360.0" layoutY="117.0" mnemonicParsing="false" onAction="#showPayments" prefHeight="200.0" prefWidth="250.0" style="-fx-background-color: #AA1BAC;" text="Show Payment Details" textFill="#f8f8f8" AnchorPane.bottomAnchor="10.0" AnchorPane.rightAnchor="270.0">
+         <font>
+            <Font size="17.0" />
+         </font>
+         <graphic>
+            <ImageView fitHeight="20.0" fitWidth="20.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../images/money-dollar-circle-line.png" />
+               </image>
+            </ImageView>
+         </graphic>
+      </Button>
+      <Button fx:id="deliverymaninfo" alignment="CENTER" layoutX="596.0" layoutY="217.0" mnemonicParsing="false" onAction="#showdeliverymaninfo" prefHeight="200.0" prefWidth="250.0" style="-fx-background-color: #AA1BAC;" text="Deliverymen" textFill="WHITE" AnchorPane.bottomAnchor="220.0" AnchorPane.rightAnchor="10.0">
+         <font>
+            <Font size="17.0" />
+         </font>
+         <graphic>
+            <ImageView fitHeight="20.0" fitWidth="20.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../images/suitcase-fill.png" />
+               </image>
+            </ImageView>
+         </graphic>
+      </Button>
+      <Button fx:id="vehicleSection" alignment="CENTER" layoutX="340.0" layoutY="146.0" mnemonicParsing="false" onAction="#openVehicleSection" prefHeight="200.0" prefWidth="250.0" style="-fx-background-color: #AA1BAC;" text=" Vehicles" textFill="WHITE" AnchorPane.bottomAnchor="220.0" AnchorPane.rightAnchor="270.0">
+         <font>
+            <Font size="17.0" />
+         </font>
+         <graphic>
+            <ImageView fitHeight="20.0" fitWidth="20.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../images/car-fill.png" />
+               </image>
+            </ImageView>
+         </graphic>
+      </Button>
+      <Label alignment="CENTER" layoutX="180.0" layoutY="4.0" prefHeight="180.0" prefWidth="720.0" text="Dashboard" textFill="#eeeeee" AnchorPane.topAnchor="4.0">
+         <font>
+            <Font size="55.0" />
+         </font>
+      </Label>
+   </children>
+</AnchorPane>

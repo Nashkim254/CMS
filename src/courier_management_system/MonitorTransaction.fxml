@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.DatePicker?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="600.0" prefWidth="900.0" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="courier_management_system.MonitorTransactionController">
+   <children>
+      <DatePicker fx:id="startdate" layoutX="164.0" layoutY="100.0" onAction="#selectStartdate" promptText="Enter a date" />
+      <DatePicker fx:id="enddate" layoutX="510.0" layoutY="100.0" onAction="#enddate" promptText="Enter a date" />
+      <Text layoutX="73.0" layoutY="121.0" strokeType="OUTSIDE" strokeWidth="0.0" text="From" wrappingWidth="50.6708984375" />
+      <Text layoutX="436.0" layoutY="121.0" strokeType="OUTSIDE" strokeWidth="0.0" text="To" />
+      <Button fx:id="show" layoutX="776.0" layoutY="100.0" mnemonicParsing="false" onAction="#showResults" text="show" />
+      <Text layoutX="259.0" layoutY="202.0" strokeType="OUTSIDE" strokeWidth="0.0" text="No of orders :" wrappingWidth="100.6708984375" />
+      <Text fx:id="orderNo" layoutX="430.0" layoutY="201.0" strokeType="OUTSIDE" strokeWidth="0.0" text="0" />
+      <Text layoutX="220.0" layoutY="238.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Total Transactions :" wrappingWidth="139.6708949804306" />
+      <Text fx:id="totalamount" layoutX="430.0" layoutY="237.0" strokeType="OUTSIDE" strokeWidth="0.0" text="0" />
+      <Button layoutX="34.0" layoutY="21.0" mnemonicParsing="false" onAction="#back_button" prefHeight="50.0" prefWidth="50.0" AnchorPane.leftAnchor="10.0" AnchorPane.topAnchor="10.0">
+         <graphic>
+            <ImageView fitHeight="20.0" fitWidth="20.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../images/arrow-go-back-line.png" />
+               </image>
+            </ImageView>
+         </graphic>
+      </Button>
+   </children>
+</AnchorPane>

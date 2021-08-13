@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<jnlp spec="1.0" xmlns:jfx="http://javafx.com" href="Courier_Management_System.jnlp">
+  <information>
+    <title>Courier_Management_System</title>
+    <vendor>HP</vendor>
+    <description>null</description>
+    <offline-allowed/>
+  </information>
+  <resources>
+    <j2se version="1.6+" href="http://java.sun.com/products/autodl/j2se"/>
+    <jar href="Courier_Management_System.jar" size="148861" download="eager" />
+    <jar href="lib\sqljdbc41.jar" size="900895" download="eager" />
+  </resources>
+  <jfx:javafx-desc  width="800" height="600" main-class="courier_management_system.Main"  name="Courier_Management_System" />
+  <update check="always"/>
+</jnlp>
